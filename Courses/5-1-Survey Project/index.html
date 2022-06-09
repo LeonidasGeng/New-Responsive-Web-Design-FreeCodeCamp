@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title><h1 id="title">Survey Form</h1></title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform.
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label"
+          >Enter Your Name:
+          <input
+            type="text"
+            id="name"
+            required
+            placeholder="Please enter your name"
+        /></label>
+        <label id="email-label"
+          >Enter Your Email:
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="Please enter your email address"
+        /></label>
+        <label id="number-label"
+          >Enter Your number:
+          <input
+            type="number"
+            id="number"
+            max="9"
+            min="0"
+            placeholder="Please enter your number"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <select id="dropdown">
+          <option>LG NB</option>
+          <option>LG HNB</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <p>What is your gender?</p>
+        <label><input type="radio" value="male" name="gender" />Male</label>
+        <label><input type="radio" value="female" name="gender" />Female</label>
+      </fieldset>
+      <fieldset>
+        <p>What is your favorite food?</p>
+        <label><input type="checkbox" value="apple" />apple</label>
+        <label><input type="checkbox" value="apple" />pear</label>
+      </fieldset>
+      <fieldset>
+        <p>What do you want to say?</p>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </fieldset>
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
