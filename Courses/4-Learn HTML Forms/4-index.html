@@ -305,51 +305,252 @@ label{ display:block; margin:0.5rem 0; }
       </fieldset>
 
 <!-- step 36 -->
+<fieldset>
+        <label>Enter Your First Name: <input type="text" name="FN" required /></label>
+        <label>Enter Your Last Name: <input type="text" name="LN" required /></label>
+        <label>Enter Your Email: <input type="email" name="email" required /></label>
+        <label>Create a New Password: <input type="password" name="pw" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <fieldset>
+        <label><input type="radio" name="account-type" /> Personal Account</label>
+        <label><input type="radio" name="account-type" /> Business Account</label>
+        <label>
+          <input type="checkbox" name="cb" required /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+			  </label>
+      </fieldset>
+      <fieldset>
+        <label>Upload a profile picture: <input type="file" name="pp" /></label>
+        <label>Input your age (years): <input type="number" name="age"  min="13" max="120" />
+			  </label>
+        <label>How did you hear about us?
+          <select name="select">
+            <option value="">(select one)</option>
+            <option value="1">freeCodeCamp News</option>
+            <option value="2">freeCodeCamp YouTube Channel</option>
+            <option value="3">freeCodeCamp Forum</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label>Provide a bio:
+				  <textarea name="ta" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+			  </label>
+      </fieldset>
 
-<!-- step  -->
+<!-- step 37 -->
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+	color: #f5f6f7;
+  font-family: Tahoma;
+  font-size:16px;
+}
 
-<!-- step  -->
+<!-- step 38 -->
+h1, p{
+  margin: 1em auto;
+  text-align: center;
+}
 
-<!-- step  -->
+<!-- step 39 -->
+form {
+  margin: 0 auto;
+  max-width:500px;
+  min-width:300px;
+  width: 60vw;
+}
 
-<!-- step  -->
+<!-- step 40 -->
+fieldset{
+  border:none;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 0;
+  padding-right: 0;
+}
 
-<!-- step  -->
+<!-- step 41 -->
+fieldset:not(:last-of-type) {
+  border-bottom:3px solid #3b3b4f;
+}
 
-<!-- step  -->
+<!-- step 42 -->
+input, textarea, select {
+  margin-top: 10px;
+  width: 100%;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
 
-<!-- step  -->
+<!-- step 43 -->
+<fieldset>
+        <label><input type="radio" name="account-type" class="inline"/> Personal Account</label>
+        <label><input type="radio" name="account-type" class="inline"/> Business Account</label>
+        <label>
+          <input type="checkbox" name="terms" required class="inline"/> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+			  </label>
+      </fieldset>
 
-<!-- step  -->
+<!-- step 44 -->
+.inline{
+  width:unset; 
+}
 
-<!-- step  -->
+<!-- step 45 -->
+.inline {
+  width: unset;
+  margin-right: 0.5em;
+  margin-left:0;
+  margin-top:0;
+  margin-bottom:0;
+}
 
-<!-- step  -->
+<!-- step 46 -->
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align:middle;
+}
 
-<!-- step  -->
+<!-- step 47 -->
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px  solid #0a0a23;
+}
 
-<!-- step  -->
+<!-- step 48 -->
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+  min-height:2em;
+}
 
-<!-- step  -->
+<!-- step 49 -->
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+	color: #f5f6f7;
+  font-family: Tahoma;
+	font-size: 16px;
+  min-height: 2em;
+}
 
-<!-- step  -->
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+  min-height: 2em;
+}
 
-<!-- step  -->
+form {
+  width: 60vw;
+	max-width: 500px;
+	min-width: 300px;
+	margin: 0 auto;
+  min-height: 2em;
+}
 
-<!-- step  -->
+fieldset {
+  border: none;
+	padding: 2rem 0;
+  min-height: 2em;
+}
 
-<!-- step  -->
+fieldset:not(:last-of-type) {
+  border-bottom: 3px solid #3b3b4f;
+  min-height: 2em;
+}
 
-<!-- step  -->
+label {
+  display: block;
+	margin: 0.5rem 0;
+}
 
-<!-- step  -->
+input,
+textarea,
+select {
+	margin: 10px 0 0 0;
+	width: 100%;
+  min-height: 2em;
+}
 
-<!-- step  -->
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
 
-<!-- step  -->
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+  min-height: 2em;
+}
 
-<!-- step  -->
+<!-- step 50 -->
+input[type="submit"] {
+  display: block;
+  width: 60%;
+}
 
-<!-- step  -->
+<!-- step 51 -->
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
 
-<!-- step  -->
+<!-- step 52 -->
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  height: 2em;
+  font-size: 1.1rem;
+}
+
+<!-- step 53 -->
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color:#3b3b4f;
+  border-color:white;
+}
+
+<!-- step 54 -->
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  margin-top: 1em auto;
+  margin-bottom: 1em auto;
+  min-width: 300px;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+}
+
+<!-- step 55 -->
+input[type=file]{padding:1px 2px;}
+
+<!-- step 56 -->
+form {
+  width: 60vw;
+	max-width: 500px;
+	min-width: 300px;
+	margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+<!-- step 57 -->
+a{
+  color: #dfdfe2;
+}
