@@ -253,6 +253,7 @@ border: 0;
             </fieldset>
           </div>
         </section>
+
 <!-- step 29 -->
 <ul class="answers-list">
                 <li><label><input type="radio"></label></li>
@@ -422,32 +423,207 @@ p::before{
                 <option value="no">No</option>
               </select>
             </div>
-            
-<!-- step  -->
 
-<!-- step  -->
+<!-- step 37 -->
+<div class="question-block">
+              <label for="select">Are you a frontend developer?</label>
+            </div>
+            <div class="answer">
+              <select name="select" id="select" required>
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+<!-- step 38 -->
+<div class="answer">
+              <textarea rows="10" cols="20" placeholder="I have those questions......"></textarea>
+            </div>
 
-<!-- step  -->
+<!-- step 39 -->
+<div class="question-block">
+              <label for="textarea" id="css-question2" name="css-question2">Do you have any questions:</label>
+            </div>
+            <div class="answer">
+              <textarea rows="5" cols="24" placeholder="Who is flexbox..." id="textarea" name="textarea"></textarea>
+            </div>
 
-<!-- step  -->
+<!-- step 40 -->
+<form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+        <section role="region" aria-labelledby="student-info">
+          <h2 id="student-info">Student Info</h2>
+          <div class="info">
+            <label for="student-name">Name:</label>
+            <input type="text" name="student-name" id="student-name" />
+          </div>
+          <div class="info">
+            <label for="student-email">Email:</label>
+            <input type="email" name="student-email" id="student-email" />
+          </div>
+          <div class="info">
+            <label for="birth-date">D.O.B.<span class="sr-only">(Date of Birth)</span></label>
+            <input type="date" name="birth-date" id="birth-date" />
+          </div>
+        </section>
+        <section role="region" aria-labelledby="html-questions">
+          <h2 id="html-questions">HTML</h2>
+          <div class="question-block">
+            <p>1</p>
+            <fieldset class="question" name="html-question-one">
+              <legend>
+                The legend element represents a caption for the content of its
+                parent fieldset element
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q1-a1">
+                    <input type="radio" id="q1-a1" name="q1" value="true" />
+                    True
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a2">
+                    <input type="radio" id="q1-a2" name="q1" value="false" />
+                    False
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <p>2</p>
+            <fieldset class="question" name="html-question-two">
+              <legend>
+                A label element nesting an input element is required to have a
+                for attribute with the same value as the input's id
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q2-a1">
+                    <input type="radio" id="q2-a1" name="q2" value="true" />
+                    True
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-a2">
+                    <input type="radio" id="q2-a2" name="q2" value="false" />
+                    False
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+        <section role="region" aria-labelledby="css-questions">
+          <h2 id="css-questions">CSS</h2>
+          <div class="formrow">
+            <div class="question-block">
+              <label for="customer">Are you a frontend developer?</label>
+            </div>
+            <div class="answer">
+              <select name="customer" id="customer" required>
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="question-block">
+              <label for="css-questions">Do you have any questions:</label>
+            </div>
+            <div class="answer">
+              <textarea id="css-questions" name="css-questions" rows="5" cols="24" placeholder="Who is flexbox..."></textarea>
+            </div>
+          </div>
+        </section>
+<button type="submit">Submit</button>
+      </form>
 
-<!-- step  -->
+<!-- step 41 -->
+<footer>
+  <address>
 
-<!-- step  -->
+  </address>
+</footer>
 
-<!-- step  -->
+<!-- step 42 -->
+<footer>
+      <address>
+freeCodeCamp<br />
+San Francisco<br />
+California<br />
+USA
+      </address>
+    </footer>
 
-<!-- step  -->
+<!-- step 43 -->
+<footer>
+      <address>
+        <a href="https://freecodecamp.org">freeCodeCamp</a><br /> 
+        San Francisco<br />
+        California<br />
+        USA
+      </address>
+    </footer>
 
-<!-- step  -->
+<!-- step 44 -->
+nav li{
+	color: #dfdfe2;
+margin: 0 0.2rem;
+padding: 0.2rem;
+display: block;
+}
 
-<!-- step  -->
+<!-- step 45 -->
+li > a{
+	color: #dfdfe2;
+}
 
-<!-- step  -->
+<!-- step 46 -->
+nav li:hover {
+	background-color:#dfdfe2;
+	color: #1b1b32;
+	cursor: pointer;
+}
 
-<!-- step  -->
+li > a {
+  color: inherit;
+	text-decoration:none;
+}
 
-<!-- step  -->
+<!-- step 47 -->
+header {
+  width: 100%;
+	height: 50px;
+	background-color: #1b1b32;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+}
+
+<!-- step 48 -->
+h1 {
+  color: #f1be32;
+	font-size: min(5vw, 1.2em);
+  text-align: center;
+
+}
+main{
+  padding-top: 25px;
+}
+
+
+<!-- step 49 -->
+nav > ul {
+  display: flex;
+	justify-content: space-evenly;
+align-items: center;
+padding-inline-start: 0;
+margin-block: 0;
+height: 100%;
+flex-wrap:wrap;
+}
 
 <!-- step  -->
 
