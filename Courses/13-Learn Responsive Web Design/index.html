@@ -1,0 +1,172 @@
+<!-- step 1 -->
+<!DOCTYPE html>
+<html></html>
+<head></head>
+<body></body>
+<title>Piano</title>
+
+<!-- step 2 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8" />
+
+<!-- step 3 -->
+<div id="piano"></div>
+
+<!-- step 4 -->
+<div class="keys"></div>
+
+<!-- step 5 -->
+<div id="piano">
+  <div class="keys">
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+  </div>
+</div>
+
+<!-- step 6 -->
+<div id="piano">
+  <div class="keys">
+    <div class="key"></div>
+    <div class="key black--key"></div>
+    <div class="key black--key"></div>
+    <div class="key"></div>
+    <div class="key black--key"></div>
+    <div class="key black--key"></div>
+    <div class="key black--key"></div>
+  </div>
+</div>
+
+<!-- step 7 -->
+<div id="piano">
+  <div class="keys">
+    <div class="key"></div>
+    <div class="key black--key"></div>
+    <div class="key black--key"></div>
+    <div class="key"></div>
+    <div class="key black--key"></div>
+    <div class="key black--key"></div>
+    <div class="key black--key"></div>
+    <div class="key"></div>
+    <div class="key black--key"></div>
+    <div class="key black--key"></div>
+    <div class="key"></div>
+    <div class="key black--key"></div>
+    <div class="key black--key"></div>
+    <div class="key black--key"></div>
+    <div class="key"></div>
+    <div class="key black--key"></div>
+    <div class="key black--key"></div>
+    <div class="key"></div>
+    <div class="key black--key"></div>
+    <div class="key black--key"></div>
+    <div class="key black--key"></div>
+  </div>
+</div>
+
+<!-- step 8 -->
+<meta charset="UTF-8" />
+<title>Piano</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="./styles.css" />
+
+<!-- step 9 -->
+html{ box-sizing: border-box; }
+
+<!-- step 10 -->
+*, ::before, ::after { box-sizing: inherit; }
+
+<!-- step 11 -->
+#piano { background: #00471b; width: 992px; height: 290px; }
+
+<!-- step 12 -->
+#piano { background-color: #00471b; width: 992px; height: 290px; margin: 80px
+auto; }
+
+<!-- step 13 -->
+.keys{ background-color: #040404; width: 949px; height: 180px; }
+
+<!-- step  14-->
+.keys { background-color: #040404; width: 949px; height: 180px; padding-left:
+2px; }
+
+<!-- step 15 -->
+#piano { background-color: #00471b; width: 992px; height: 290px; margin: 80px
+auto; padding: 90px 20px 0 20px; }
+
+<!-- step 16 -->
+.key{ background-color: #ffffff; position: relative; width: 41px; height: 175px;
+}
+
+<!-- step 17 -->
+.key { background-color: #ffffff; position: relative; width: 41px; height:
+175px; margin: 2px; float: left; }
+
+<!-- step 18 -->
+.key.black--key::after{ background-color: #1d1e22; content: ""; }
+
+<!-- step 19 -->
+.key.black--key::after { background-color: #1d1e22; content: ""; position:
+absolute; left:-18px; }
+
+<!-- step 20 -->
+.key.black--key::after { background-color: #1d1e22; content: ""; position:
+absolute; left: -18px; width: 32px; height: 100px; }
+
+<!-- step 21 -->
+<div id="piano">
+  <img
+    class="logo"
+    src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
+    alt="freeCodeCamp Logo"
+  />
+  <div class="keys">
+    <!-- step 22 -->
+    .logo{ width:200px; position: absolute; top: 23px; }
+
+    <!-- step 23 -->
+    #piano { background-color: #00471b; width: 992px; height: 290px; margin:
+    80px auto; padding: 90px 20px 0 20px; position:relative; }
+
+    <!-- step 24 -->
+    #piano { background-color: #00471b; width: 992px; height: 290px; margin:
+    80px auto; padding: 90px 20px 0 20px; position: relative; border-radius:
+    10px; }
+    <!-- step 25 -->
+    .key { background-color: #ffffff; position: relative; width: 41px; height:
+    175px; margin: 2px; float: left; border-radius: 0 0 3px 3px; }
+
+    <!-- step 26 -->
+    .key.black--key::after { background-color: #1d1e22; content: ""; position:
+    absolute; left: -18px; width: 32px; height: 100px; border-radius: 0 0 3px
+    3px; }
+
+    <!-- step 27 -->
+    @media(max-width: 768px){ }
+
+    <!-- step 28 -->
+    @media (max-width: 768px) { #piano{ width: 358px; } }
+
+    <!-- step 29 -->
+    @media (max-width: 768px) { #piano { width: 358px; } .keys{ width: 318px; }
+    }
+
+    <!-- step 30 -->
+    @media (max-width: 768px) { #piano { width: 358px; } .logo{ width: 150px; }
+    .keys { width: 318px; } }
+
+    <!-- step 31 -->
+    .keys { background-color: #040404; width: 949px; height: 180px;
+    padding-left: 2px; overflow: hidden; }
+
+    <!-- step 32 -->
+    @media(min-width:769px) and (max-width:1199px){ }
+    <!-- step 33 -->
+    @media (max-width: 1199px) and (min-width: 769px) { #piano{ width: 675px; }
+    .keys{ width: 633px; } }
+  </div>
+</div>
